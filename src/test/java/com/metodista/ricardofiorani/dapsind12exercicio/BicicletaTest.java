@@ -15,6 +15,16 @@ import static org.junit.Assert.*;
 public class BicicletaTest {
 
     /**
+     * Testa o construtor da classe
+     */
+    @Test
+    public void testConstuctor() {
+        Bicicleta bicicleta = new Bicicleta();
+        assertNotNull(bicicleta.getRodaDianteira());
+        assertNotNull(bicicleta.getRodaTraseira());
+    }
+
+    /**
      * Test of andar method, of class Bicicleta.
      */
     @Test
@@ -22,8 +32,8 @@ public class BicicletaTest {
         System.out.println("andar");
         Bicicleta instance = new Bicicleta();
         instance.andar();
-        assertTrue(instance.getRodaDianteira().isEmAndamento());
-        assertTrue(instance.getRodaTraseira().isEmAndamento());
+        assertTrue(instance.getRodaDianteira().isEmMovimento());
+        assertTrue(instance.getRodaTraseira().isEmMovimento());
     }
 
     /**
@@ -35,8 +45,8 @@ public class BicicletaTest {
         Bicicleta instance = new Bicicleta();
         instance.andar();
         instance.frear();
-        assertFalse(instance.getRodaDianteira().isEmAndamento());
-        assertFalse(instance.getRodaTraseira().isEmAndamento());
+        assertFalse(instance.getRodaDianteira().isEmMovimento());
+        assertFalse(instance.getRodaTraseira().isEmMovimento());
     }
 
 }

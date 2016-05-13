@@ -15,13 +15,13 @@ public class Bicicleta {
     private Roda rodaTraseira;
 
     public void andar() {
-        this.rodaDianteira.girar();
-        this.rodaTraseira.girar();
+        this.getRodaDianteira().girar();
+        this.getRodaTraseira().girar();
     }
 
     public void frear() {
-        this.rodaDianteira.parar();
-        this.rodaTraseira.parar();
+        this.getRodaDianteira().parar();
+        this.getRodaTraseira().parar();
     }
 
     public void Bicicleta() {

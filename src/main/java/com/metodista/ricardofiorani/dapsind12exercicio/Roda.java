@@ -6,18 +6,18 @@ package com.metodista.ricardofiorani.dapsind12exercicio;
  */
 public class Roda {
 
-    private boolean emAndamento;
+    private boolean emMovimento;
 
     public void girar() {
-        this.emAndamento = true;
+        this.emMovimento = true;
     }
 
     public void parar() {
-        this.emAndamento = false;
+        this.emMovimento = false;
     }
 
-    public boolean isEmAndamento() {
-        return emAndamento;
+    public boolean isEmMovimento() {
+        return emMovimento;
     }
     
 }

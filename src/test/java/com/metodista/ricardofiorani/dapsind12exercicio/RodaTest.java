@@ -22,7 +22,7 @@ public class RodaTest {
         System.out.println("girar");
         Roda instance = new Roda();
         instance.girar();
-        assertTrue(instance.isEmAndamento());
+        assertTrue(instance.isEmMovimento());
     }
 
     /**
@@ -33,7 +33,7 @@ public class RodaTest {
         System.out.println("parar");
         Roda instance = new Roda();
         instance.parar();
-        assertFalse(instance.isEmAndamento());
+        assertFalse(instance.isEmMovimento());
     }
 
 }
