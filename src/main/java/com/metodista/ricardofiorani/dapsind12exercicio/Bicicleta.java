@@ -11,7 +11,7 @@ package com.metodista.ricardofiorani.dapsind12exercicio;
  */
 public class Bicicleta {
 
-    public Roda rodaDianteira;
+    private Roda rodaDianteira;
     private Roda rodaTraseira;
 
     public void andar() {
@@ -28,4 +28,13 @@ public class Bicicleta {
         this.rodaDianteira = new Roda();
         this.rodaTraseira = new Roda();
     }
+
+    public Roda getRodaDianteira() {
+        return rodaDianteira;
+    }
+
+    public Roda getRodaTraseira() {
+        return rodaTraseira;
+    }
+
 }

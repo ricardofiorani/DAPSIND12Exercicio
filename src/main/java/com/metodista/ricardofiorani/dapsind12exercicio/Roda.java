@@ -15,5 +15,9 @@ public class Roda {
     public void parar() {
         this.emAndamento = false;
     }
+
+    public boolean isEmAndamento() {
+        return emAndamento;
+    }
     
 }
